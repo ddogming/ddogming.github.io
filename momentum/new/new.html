@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>모멘텀 만들기</title>
+  <link rel="stylesheet" href="./new.css">
+</head>
+<body>
+  <!-- top -->
+  <div class="top">
+    <div class="weather">
+      <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EB%82%A0%EC%94%A8" id="weatherLink">
+        <img id="weatherIcon" src="./photo/sunicon.png" alt="icon1"> 0 °C
+      </a>
+    </div>
+    <div class="icon">
+      <a href="#"><img src="./photo/icon2.png" alt="icon2"></a>
+      <a href="#"><img src="./photo/suljungicon.png" alt="icon3"></a>
+    </div>
+  </div>
+
+  <!-- center -->
+  <div class="center">
+    <h1 class="clock">00:00:00</h1>
+    <div class="login">
+      <div class="name">
+        <p class="hidden">Good morning,</p>
+        <span class="username"></span>
+      </div>
+      <button class="logout hidden" onclick="logout()">LOGOUT</button>
+      <form id="loginForm" onsubmit="login(event)">
+        <input class="same"     type="text" id="usernameInput" placeholder="로그인 이름을 입력하세요" required>
+        <button type="submit" class="login">LOGIN</button>
+      </form>
+    </div>
+  </div>
+  <!-- search -->
+   <div class="search">
+    <form action="https://search.naver.com/search.naver" method="get">
+      <div class="search-all">
+        <input id="search-box" type="text" id="query" name="query" placeholder="검색어를 입력하세요" required>
+          <button id="search-bnt" type="submit">
+            <img src="./photo/search-icon.png" alt="검색이미지">
+          </button>
+      </div>
+    </form>
+   </div>
+  <!-- bottom -->
+  <div class="today-list">
+    <h3>TODAY</h3>
+    <hr>
+    <form id="todoForm" onsubmit="addTodo(event)">
+      <input class="same" type="text" id="todoInput" placeholder="오늘 할 일을 입력하세요" required>
+      <button type="submit">추가</button>
+    </form>
+    <ul id="todoList"></ul>
+  </div>
+  <script src="./new.js"></script>
+  <script src="./login.js"></script>
+</body>
+</html>
