@@ -346,6 +346,9 @@ footer > p:nth-child(2){
     main .card{
         width: 23%;
     }
+    .btn > div:nth-of-type(1), .filter{
+        display: none;
+    }
 }
 @media screen and (max-width:950px){
     header{
