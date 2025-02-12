@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+
+main{
+    height: 600vh;
+    position: relative;
+}
+/*** section 별 설정 ***/
+section{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+section.active{
+    opacity: 1;
+}
+section.sec1{
+    background-image: url(./scroll-images/sky1.png);
+}
+section.sec2{
+    background-image: url(./scroll-images/sky2.png);
+}
+section.sec3{
+    background-image: url(./scroll-images/sky3.png);
+}
+section.sec4{
+    background-image: url(./scroll-images/sky4.png);
+}
+/***town***/
+.town{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.town > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.3s;
+}
+.town >img.active{
+    opacity: 1;
+}
+/***circle***/
+.sky{
+    position: fixed;
+    top: 45%;
+    left: 38%;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation{
+    0%{ transform: rotate(0deg);}
+    100%{ transform: rotate(360deg);}
+}
+/*** 태양 ***/
+.light > img{
+    position: fixed;
+}
+.sun{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: center 500px;
+    transition: 1s;
+    opacity: 0;
+}
+.moon{
+    width: 120px;
+    top: 0;
+    right: 10%;
+    opacity: 0;
+    transition: 1s;
+}
+.moon.active{
+    opacity: 1;
+    top: 50%;
+}
