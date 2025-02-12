@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/*** reset.css***/
+*{margin:0; padding:0;}
+a{text-decoration:none;}
+li{ list-style: none;}
+body{height:100vh;}
+
+/** google font**/
+.black-han-sans-regular {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/***header 영역***/
+header > nav > div.logo {
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+header > nav > ul > li {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+header > nav > ul > li:hover{
+    background-color: rgba(0, 0, 0, 0.6)
+}
+header > nav > div.icons > a{
+    margin: 0 2px;
+    color: #fff;
+}
+header > nav{
+    width: 90%;
+    min-width: 800px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    height: 100%;
+    background-image: url(../start\ page.jfif);
+    background-size: cover;
+    color: #fff;
+    font-size: 20px;
+    position: relative;   /*** 기준범위 ***/
+}
+header > div{
+    /***relative로 변경***/
+    /*
+    position:relative;
+    top: 400px;
+    left: 100px;
+    */
+    /*** absolute로 위치 이동***/
+    position: absolute;
+    bottom: 10%;
+    left: 100px;
+    }
+header > div > p:nth-of-type(1){
+    font-size: 80px;
+    letter-spacing: 6px;
+    /*line-height: 1; */
+}
+
+/** 메인 영역 **/
+main > div.card{
+    width: 90%;
+    margin: 20px auto;
+    height: 70vh;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+main > div.card div.card-txt{
+margin-top: 50px;
+text-align: center;
+color: #fff;
+} 
+main > div.card div.card-txt > p{
+    font-size: 50px;
+}
+main > div.card > div.card-txt > a{
+    text-decoration: underline;
+    color: #fff;
+}
+main > div.card div.card-btn{
+    margin-bottom: 30px;
+}
+main > div.one{
+    background-image: url(../model\ Y.jfif);
+}
+main > div.card > div.card-a{
+margin-top: 50px;
+text-align: center;
+color: #fff;
+} 
+main > div.card > div.card-a > p{
+    font-size: 50px;
+}
+main > div.card > div.card-btn{
+    margin-bottom: 30px;
+}
+main > div.two{
+    background-image: url(../model\ 3.jfif);
+}
+main > div.card > div.card-b{
+margin-top: 50px;
+text-align: center;
+color: #fff;
+} 
+main > div.card div.card-b > p{
+    font-size: 50px;
+}
+main > div.card > div.card-btn{
+    margin-bottom: 30px;
+}
+main > div.three{
+    background-image: url(../model\ S.jfif);
+}
+main > div.four > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+main > div.four{
+    position: relative;
+}
+main > div.four > div.detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+main > div.four > div.detail> div.card-txt> a{
+    text-decoration: underline;
+    color: #fff;
+}
+footer{
+    padding: 50px 0;
+}
+footer > ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #333;
+    margin: 50px 0;
+    cursor: pointer;
+}
+/*** 공통버튼 ***/
+.btn{
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    color: #222;
+    padding: 5px 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.white{
+    background-color: #fff;
+    color: #222;
+}
+.blue{
+    background-color: #00f;
+    color: #fff;
+}
