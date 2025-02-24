@@ -7,82 +7,33 @@
   <link rel="stylesheet" href="./test.css">
 </head>
 <body>
-  <section class="fifth">
-    <h2>슬라이드</h2>
-      <div class="slider">
-        <div class="netflix">
-            <h3>① Netflix Clone <span>:: React 기반의 웹 구현</span></h3>
-            <div class="n-wrap">
-            <div class="n-info">
-                <p><span>개인 프로젝트 :</span> 참여도 100%</p>
-                <p><span>제작 기간 :</span> 2일</p>
-                <p><span>사용툴 :</span> Figma, HTML5, JAVASCRIPT, REACT(SCSS)</p>
-            </div>
-            <p>React를 활용해 Netflix의 핵심 기능을 재현한 클론 웹 어플리케이션을 개발했습니다.
-                <br>UI/UX 디자인과 비동기 데이터 처리에 중점을 두었고, React, React Router, TMdb API를 연동하여 기능을 구현했습니다. 
-                <br>레이아웃은 Flex를 기반으로 구성했으며, Figma에서 디자인을 먼저 완성한 후 HTML, JavaScript, SCSS로 실제 구현했습니다.</p>
-            <a href="https://ddogming.github.io/netflix_clone"><button>SITE 바로가기</button></a>
-        </div>
-        <img src="./images/net-1.png" alt="넷플릭스 전체화면">
-        <img src="./images/MacBook-net.png" alt="넷플릭스 맥북">
-        </div>
-        <!-- <div class="tesla">
-            <h3>② Tesla Clone <span>:: HTML5 & CSS3 웹 표준 기반 구현</span></h3>
-            <div class="t-wrap">
-            <div class="t-info">
-                <p><span>개인 프로젝트 :</span> 참여도 100%</p>
-                <p><span>제작 기간 :</span> 2일</p>
-                <p><span>사용툴 :</span> Figma, HTML5, CSS3</p>
-            </div>
-            <p>이 프로젝트는 테슬라 웹사이트의 레이아웃과 애니메이션을 재현하며, 웹 표준, 접근성 준수를 중점으로 개발한 프로젝트입니다.
-                <br>Figma를 통해 화면을 분석한 후 클론 코딩을 진행하였고, Flexbox를 활용해 레이아웃을 구성했습니다. 
-                <br>또한, FontAwesome과 Google Fonts를 사용하여 디자인을 더욱 완성도 있게 구현했습니다.</p>
-            <a href="https://ddogming.github.io/Tesla/index.html"><button>SITE 바로가기</button></a>
-        </div>
-        <img src="./images/tesla-2.png" alt="테슬라 전체화면">
-        <img src="./images/tesla-mac.png" alt="테슬라 맥">
-        </div>
-        <div class="airbnb">
-            <h3>③ Airbnb Clone <span>:: 반응형 숙박 웹사이트 HTML구현</span></h3>
-            <div class="a-wrap">
-            <div class="a-info">
-                <p><span>개인 프로젝트 :</span> 참여도 100%</p>
-                <p><span>제작 기간 :</span> 2일</p>
-                <p><span>사용툴 :</span> Figma, HTML5, CSS3</p>
-            </div>
-            <p>반응형 웹 디자인과 웹 표준, 접근성 준수를 바탕으로 UX/UI를 세심하게 조정하였으며, 다양한 디바이스에서도 최적화된 화면을 제공합니다.
-                <br>또한, Figma를 활용해 화면 분석 후 클론 코딩을 진행하였고, 
-                <br>Flexbox를 활용하여 레이아웃을 구성하여 원활한 웹 어플리케이션 이용 환경을 구현했습니다.</p>
-            <a href="ddogming.github.io/Airbnb/Airbnb-clone.html.html"><button>SITE 바로가기</button></a>
-        </div>
-        <img src="./images/airbnb-1.png" alt="에어비앤비 반응형">
-        </div> -->
+  <div class="container">
+    <div class='slide'>
+      <img src="./images/pall.PNG" alt="">
     </div>
-    <div class="btn">
-      <button id="prev">이전</button>
-      <button id="next">다음</button>
+    <div class='slide'>
+      <img src="./images/그리드.png" alt="">
     </div>
-  </section>
-  <script>
-    const slider = document.querySelector(".slider");
-    const prevBtn = document.getElementById("prev");
-    const nextBtn = document.getElementById("next");
-    let index = 0;
-    const slideWidth = 800; // 슬라이드 한 개의 너비
-
-    nextBtn.addEventListener("click", () => {
-      if (index < 2) {
-        index++;
-        slider.style.transform = `translateX(${-slideWidth * index}px)`;
-      }
-    });
-
-    prevBtn.addEventListener("click", () => {
-      if (index > 0) {
-        index--;
-        slider.style.transform = `translateX(${-slideWidth * index}px)`;
-      }
-    });
-  </script>
+    <div class='slide'>
+      <img src="./images/cloud.PNG" alt="">
+    </div>
+    <div class='slide'>
+      <img src="./images/skillbar.png" alt="">
+    </div>
+  </div>
+  
+  <div class='buttons'>
+    <button class='next'>
+      앞으로
+    </button></div>
+    <script>
+    const container = document.querySelector('.container');
+const next = document.querySelector('.next')
+next.addEventListener('click',()=>{
+  const slides = document.querySelectorAll('.slide')
+  
+  container.prepend(slides[slides.length-1])
+})
+    </script>
 </body>
 </html>

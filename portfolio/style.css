@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 li{
     list-style: none;
@@ -355,7 +354,7 @@ body{
     margin-left: 410px;
 }
 .fifth > .slider{
-    width: 300%;
+    width: 400%;
     display: flex;
     transition: all 0.5s;
 }
@@ -532,6 +531,60 @@ body{
     position: absolute;
     top: 210px;
     right: 20px;
+}
+/******momentum********/
+.fifth > .slider > .momentum{
+    width: 100%;
+    position: relative;
+    background-color: #252525;
+    padding: 20px;
+}
+.fifth > .slider > .momentum > h3{
+    font-family: 'LOTTERIADDAG';
+    font-size: 40px;
+    color: #f2ebee;
+    padding: 40px;
+    margin-left: 80px;
+}
+.fifth > .slider > .momentum > .m-wrap > .m-info{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 110px;
+}
+.fifth > .slider > .momentum > .m-wrap > .m-info > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+    color: #f2ebee;
+}
+.fifth > .slider > .momentum > .m-wrap > .m-info > p > span{
+    font-weight: bold;
+    font-size: 19px;
+}
+.fifth > .slider > .momentum > .m-wrap > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    line-height: 40px;
+    color: #f2ebee;
+    padding: 30px;
+    margin-left: 100px;
+}
+.fifth > .slider > .momentum > .m-wrap > a > button{
+    padding: 15px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #cd4179;
+    color: #f2ebee;
+    margin-left: 126px;
+    margin-top: 170px;
+    font-size: 30px;
+    font-family: 'LOTTERIADDAG';
+}
+.fifth > .slider > .momentum > img{
+    width: 600px;
+    position: absolute;
+    top: 120px;
+    right: 150px;
 }
 .fifth > .btn{
     z-index: 10;
@@ -781,14 +834,158 @@ body{
 }
 
 /******일곱번째 페이지******/
-.seventh > .slide_wrapper > .slides > li{
-    list-style: none;
+.seventh{
+    box-sizing: border-box;
+    overflow: hidden;
+	margin: 0;
+	background-color: #4c4c4c;
+	/* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.seventh > .slide_wrapper > .slides > li > img{
-    width: 100%;
-    height: 100%;
+.seventh > h2{
+    font-size: 70px;
+    font-family: 'LOTTERIADDAG';
+   color: #f2ebee; 
+}
+.seventh > .container {
+	width: 100%;
+	display: flex;
+	padding: 0 20px;
+}
+.seventh > .container > .slide {
+	height: 60vh;
+	border-radius: 20px;
+	margin: 10px;
+	cursor: pointer;
+	color: #999999;
+	flex: 1;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	transition: all 0.7s ease-in-out;
+	filter: blur(2px);
+}
+.seventh > .container > .slide > h3 {
+	position: absolute;
+    font-size: 50px;
+    font-weight: lighter;
+	bottom: 45px;
+	left: 20px;
+	margin: 0;
+	opacity: 0;
+	background-color: #cd4179;
+	/* background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%); */
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'LOTTERIADDAG';
+}
+.seventh > .container > .slide > a > button{
+    width: 150px;
+    height: 30px;
+    background-color: #f2ebee;
+    color: #000;
+    font-size: 15px;
+    position: relative;
+    top: 530px;
+    left: 20px;
+    border-radius: 15px;
+    opacity: 0;
+}
+.seventh > .container > .slide.active {
+	flex: 10;
+	filter: blur(0px);
+}
+.seventh > .container > .slide.active > h3  {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+}
+.seventh > .container > .slide.active > a > button{
+    opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
 }
 
+
+/******여덟번쨰 페이지********/
+.eighth{
+    box-sizing: border-box;
+    overflow: hidden;
+	margin: 0;
+	background-color: #b4b4b4;
+	/* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.eighth > h2{
+    font-size: 70px;
+    font-family: 'LOTTERIADDAG';
+    margin-left: 60px;
+   color: #252525; 
+}
+.eighth > .container {
+	width: 100%;
+	display: flex;
+	padding: 0 20px;
+}
+.eighth > .container > .slide {
+	height: 60vh;
+	border-radius: 20px;
+	margin: 10px;
+	cursor: pointer;
+	color: #999999;
+	flex: 1;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	transition: all 0.7s ease-in-out;
+	filter: blur(2px);
+}
+.eighth > .container > .slide > h3 {
+	position: absolute;
+    font-size: 40px;
+    font-weight: lighter;
+	bottom: 10px;
+	left: 20px;
+	margin: 0;
+	opacity: 0;
+	background-color: #cd4179;
+	/* background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%); */
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'LOTTERIADDAG';
+}
+.eighth > .container > .slide > a > button{
+    width: 150px;
+    height: 30px;
+    background-color: #f2ebee;
+    color: #000;
+    font-size: 15px;
+    position: relative;
+    top: 530px;
+    left: 20px;
+    border-radius: 15px;
+    opacity: 0;
+}
+.eighth > .container > .slide.active {
+	flex: 10;
+	filter: blur(0px);
+}
+.eighth > .container > .slide.active > h3  {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+}
+.eighth > .container > .slide.active > a > button{
+    opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+}
 
 @keyframes fadeInDown {
     0% {
@@ -808,3 +1005,8 @@ body{
       transform: translateX(-100%);
     }
   }
+  @media screen and (max-width: 50rem) {
+	.slide h3 {
+		left: 5px;
+	}   
+}
