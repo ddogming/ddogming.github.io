@@ -1,0 +1,174 @@
+.fifth {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+.fifth > .slider {
+  width: 2400px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.fifth > h2{
+  font-family: 'LOTTERIADDAG';
+  font-size: 70px;
+  color: #000;
+}
+/****net****/
+.fifth > .slider > .netflix{
+  width: 800px;
+}
+.fifth > .slider > .netflix > h3{
+  font-family: 'LOTTERIADDAG';
+  font-size: 40px;
+  color: #f2ebee;
+  margin-top: 100px;
+}
+.fifth > .slider > .netflix > h3 > span{
+  font-family: 'Pretendard-Regular';
+  font-size: 30px;
+  font-weight:bold;
+  color: #f2ebee;
+}
+.fifth > .slider > .netflix > .n-wrap > .n-info{
+  display: flex;
+  gap: 50px;
+  color: #f2ebee;
+}
+.fifth > .slider > .netflix > .n-wrap > p{
+  position: absolute;
+  top: 250px;
+  left: 30px;
+  line-height: 30px;
+}
+.fifth > .slider > .netflix > .n-wrap > a > button{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.fifth > .slider > .netflix > .n-wrap > .n-info > p{
+  font-family: 'Pretendard-Regular';
+  font-size: 17px;
+  color: #f2ebee;
+}
+.fifth > .slider > .netflix > .n-wrap > .n-info > p > span{
+  font-family: 'Pretendard-Regular';
+  font-weight: bold;
+  font-size: 19px;
+  color: #f2ebee;
+}
+.fifth > .slider > .netflix > .n-wrap > p{
+  font-family: 'Pretendard-Regular';
+  font-size: 17px;
+  color: #f2ebee;
+}
+.fifth > .slider > .netflix > img{
+  width: 380px;
+}
+.fifth > .slider > .netflix > img:last-child{
+  width: 600px;
+}
+/**********************/
+.fifth > .slider > .tesla > h3{
+  font-family: 'LOTTERIADDAG';
+  font-size: 40px;
+  color: #f2ebee;
+}
+.fifth > .slider > .tesla > h3 > span{
+  font-family: 'Pretendard-Regular';
+  font-size: 30px;
+  font-weight:bold;
+  color: #f2ebee;
+}
+.fifth > .slider > .tesla > .t-wrap > .t-info{
+  display: flex;
+  gap: 50px;
+  color: #f2ebee;
+}
+.fifth > .slider > .tesla > .t-wrap > p{
+  line-height: 30px;
+}
+.fifth > .slider > .tesla > .t-wrap > a > button{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.fifth > .slider > .tesla > .t-wrap > .t-info > p{
+  font-family: 'Pretendard-Regular';
+  font-size: 17px;
+  color: #f2ebee;
+}
+.fifth > .slider > .tesla > .t-wrap > .t-info > p > span{
+  font-family: 'Pretendard-Regular';
+  font-weight: bold;
+  font-size: 19px;
+  color: #f2ebee;
+}
+.fifth > .slider > .tesla > .t-wrap > p{
+  font-family: 'Pretendard-Regular';
+  font-size: 17px;
+  color: #f2ebee;
+}
+.fifth > .slider > .tesla > img{
+  width: 355px;
+}
+.fifth > .slider > .tesla > img:last-child{
+  width: 450px;
+}
+/************************/
+.fifth > .slider > .airbnb > h3{
+  font-family: 'LOTTERIADDAG';
+  font-size: 40px;
+  color: #f2ebee;
+}
+.fifth > .slider > .airbnb > h3 > span{
+  font-family: 'Pretendard-Regular';
+  font-size: 30px;
+  font-weight:bold;
+  color: #f2ebee;
+}
+.fifth > .slider > .airbnb > .a-wrap > .a-info{
+  display: flex;
+  gap: 50px;
+  color: #f2ebee;
+}
+.fifth > .slider > .airbnb > .a-wrap > p{
+  line-height: 30px;
+}
+.fifth > .slider > .airbnb > .a-wrap > a > button{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.fifth > .slider > .airbnb > .a-wrap > .a-info > p{
+  font-family: 'Pretendard-Regular';
+  font-size: 17px;
+  color: #f2ebee;
+}
+.fifth > .slider > .airbnb > .a-wrap > .a-info > p > span{
+  font-family: 'Pretendard-Regular';
+  font-weight: bold;
+  font-size: 19px;
+  color: #f2ebee;
+}
+.fifth > .slider > .airbnb > .a-wrap > p{
+  font-family: 'Pretendard-Regular';
+  font-size: 17px;
+  color: #f2ebee;
+}
+.fifth > .slider > .airbnb > img{
+  width: 355px;
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.btn > button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}

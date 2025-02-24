@@ -1,0 +1,810 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+/******롯데리아 딱붙어체 폰트*******/
+@font-face {
+    font-family: 'LOTTERIADDAG';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2') format('woff2');
+}
+/*******프리텐다드 폰트**********/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+body{
+    width: 100%;
+    height: 1500vh;
+    background-color: #4c4c4c;
+}
+/******* 첫번째 페이지 ********/
+.first{
+    width: 100%;
+    height: 100vh;
+    /* background-color: tomato; */
+    position: relative;
+}
+.first > .banner{
+    display: flex;
+    gap: 350px;
+    /* position: absolute; */
+    font-family: 'LOTTERIADDAG';
+}
+.first > h1{
+    font-family: 'LOTTERIADDAG';
+    font-size: 140px;
+    font-weight: normal;
+    line-height: 270px;
+    color: #f9f1f4;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.first > h1 > span {
+    color: #cd4179;
+}
+.first > h1 > span:first-child{
+    color: #cd4179;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 0;
+}
+.first > img{
+    position: absolute;
+    bottom: 200px;
+    right: 250px;
+    animation: fadeInDown 1s;
+    behavior: smooth;
+}
+.first > .contact{
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+}
+.first > .contact > p{
+    font-family: 'LOTTERIADDAG';
+    font-size: 20px;
+    color: #e9d3dc;
+}
+
+/*********두번째 페이지*********/
+.second{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #252525;
+}
+/* .second > p{
+    font-family: 'Pretendard-Regular';
+    animation: moveText 20s linear infinite;
+    
+} */
+.second > h2{
+    font-family: 'Pretendard-Regular';
+    /* font-weight:normal; */
+    text-align: center;
+    font-size: 70px;
+    color: #f2ebee;
+    position: absolute;
+    bottom: 650px;
+    left: 290px;
+}
+.second > h2 > span{
+    color: #cd4179;
+}
+.second > .explain{
+    position: absolute;
+    bottom: 280px;
+    left: 390px;
+}
+.second > .explain > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 35px;
+    color: #e9d3dc;
+    text-align: center;
+    padding: 20px;
+    line-height: 50px;
+}
+.second > .explain > p > span{
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 0;
+}
+.second > .key > ul{
+    display: flex;
+    gap: 30px;
+}
+.second > .key > ul > li{
+    width: 300px;
+    text-align: center;
+    font-family: 'Pretendard-Regular';
+    font-size: 33px;
+    font-weight: bolder;
+    background-color: #f2ebee;
+    padding: 15px 40px;
+    border-radius: 30px;
+    position: relative;
+    top: 770px;
+    left: 160px;
+    border: 3.5px solid #000;
+}
+
+/**********세번째 페이지********/
+
+.third{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: tomato; */
+}
+.third > h2{
+    font-family: 'LOTTERIADDAG';
+    color: #e9d3dc;
+    font-size: 70px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.third > img{
+    width: 350px;
+    position: absolute;
+    top: 300px;
+    left: 350px;
+}
+.third > .container{
+    width: 700px;
+    height: 750px;
+    background-color: #f9f1f4;
+    position: absolute;
+    top: 190px;
+    right: 100px;
+    border-radius: 50px;
+}
+.third > .container > .info{
+    position: absolute;
+    top: 80px;
+}
+.third > .container > .info > p{
+    font-family: 'LOTTERIADDAG';
+    font-size: 35px;
+    padding: 10px;
+}
+.third > .container > .dec{
+    position: absolute;
+    top: 300px;
+}
+.third > .container > .dec > p{
+    font-family: 'LOTTERIADDAG';
+    font-size: 35px;
+    padding: 8px 0;
+}
+.third > .container > .dec > p:first-child{
+    color: #cd4179;
+}
+.third > .container > .skill{
+    position: absolute;
+    top: 500px;
+    left: 27px;
+}
+.third > .container > .skill > p{
+    font-family: 'LOTTERIADDAG';
+    font-size: 35px;
+}
+.third > .container > .skill > img{
+    padding: 5px;
+}
+
+/*********네번째 페이지********/
+.fourth{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/web-mockup-bg.png);
+    background-size: cover;
+    position: relative;
+}
+/* .fourth:after {
+    content: '';
+    position: absolute;
+    background: black;
+    z-index: -1;
+    inset: 0;
+    opacity: 0.7;
+  } */
+.fourth > h2{
+    font-family: 'LOTTERIADDAG';
+    font-size: 80px;
+    color: #252525;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+.fourth > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 25px;
+    position: absolute;
+    top: 240px;
+    left: 760px;
+}
+.fourth > .btn{
+    width: 100%;
+    height: 653px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.fourth > .btn > .clone{
+    width: 250px;
+    height: 400px;
+    background-color: #252525;
+    border-radius: 100px;
+}
+.fourth > .btn > .clone:hover{
+    cursor: pointer;
+    background-color: #f2ebee;
+    box-shadow: 10px 25px 30px rgba(247, 247, 247, 0.3);
+}
+.fourth > .btn > .clone > p{
+    font-family: 'LOTTERIADDAG';
+    font-size: 30px;
+    position: absolute;
+    top: 280px;
+    left: 135px;
+    text-align: center;
+    color: #cd4179;
+}
+.fourth > .btn > .web{
+    width: 250px;
+    height: 400px;
+    background-color: #252525;
+    border-radius: 100px;
+}
+.fourth > .btn > .web:hover{
+    cursor: pointer;
+    background-color: #f2ebee;
+    box-shadow: 10px 25px 30px rgba(247, 247, 247, 0.3);
+}
+.fourth > .btn > .web > p{
+    font-family: 'LOTTERIADDAG';
+    font-size: 30px;
+    position: absolute;
+    top: 280px;
+    left: 487px;
+    text-align: center;
+    color: #cd4179;
+}
+.fourth > .btn > .design{
+    width: 250px;
+    height: 400px;
+    background-color: #252525;
+    border-radius: 100px;
+}
+.fourth > .btn > .design:hover{
+    cursor: pointer;
+    background-color: #f2ebee;
+    box-shadow: 10px 25px 30px rgba(247, 247, 247, 0.3);
+}
+.fourth > .btn > .design > p{
+    font-family: 'LOTTERIADDAG';
+    font-size: 30px;
+    position: absolute;
+    top: 280px;
+    left: 884px;
+    text-align: center;
+    color: #cd4179;
+}
+.fourth > .btn > .ani{
+    width: 250px;
+    height: 400px;
+    background-color: #252525;
+    border-radius: 100px;
+}
+.fourth > .btn > .ani:hover{
+    cursor: pointer;
+    background-color: #f2ebee;
+    box-shadow: 10px 25px 30px rgba(247, 247, 247, 0.3);
+}
+.fourth > .btn > .ani > p{
+    font-family: 'LOTTERIADDAG';
+    font-size: 30px;
+    position: absolute;
+    top: 295px;
+    right: 502px;
+    text-align: center;
+    color: #cd4179;
+}
+.fourth > .btn > .js{
+    width: 250px;
+    height: 400px;
+    background-color: #252525;
+    border-radius: 100px;
+}
+.fourth > .btn > .js:hover{
+    cursor: pointer;
+    background-color: #f2ebee;
+    box-shadow: 10px 25px 30px rgba(247, 247, 247, 0.3);
+}
+.fourth > .btn > .js > p{
+    font-family: 'LOTTERIADDAG';
+    font-size: 30px;
+    position: absolute;
+    top: 295px;
+    right: 142px;
+    text-align: center;
+    color: #cd4179;
+}
+
+/********다섯번째 페이지******/
+.fifth{
+    background-color: #b4b4b4;
+    overflow: hidden;
+}
+.fifth > h2{
+    font-family: 'LOTTERIADDAG';
+    color: #000;
+    font-size: 70px;
+    padding: 20px;
+    margin-left: 410px;
+}
+.fifth > .slider{
+    width: 300%;
+    display: flex;
+    transition: all 0.5s;
+}
+/***netflix****/
+.fifth > .slider > .netflix{
+    width: 100%;
+    position: relative;
+    background-color: #252525;
+    padding: 20px;
+}
+.fifth > .slider > .netflix > h3{
+    font-family: 'LOTTERIADDAG';
+    font-size: 40px;
+    color: #f2ebee;
+    padding: 40px;
+    margin-left: 80px;
+}
+.fifth > .slider > .netflix > .n-wrap > .n-info{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 110px;
+}
+.fifth > .slider > .netflix > .n-wrap > .n-info > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+    color: #f2ebee;
+}
+.fifth > .slider > .netflix > .n-wrap > .n-info > p > span{
+    font-weight: bold;
+    font-size: 19px;
+}
+.fifth > .slider > .netflix > .n-wrap > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    line-height: 40px;
+    color: #f2ebee;
+    padding: 30px;
+    margin-left: 100px;
+}
+.fifth > .slider > .netflix > .n-wrap > a > button{
+    padding: 15px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #cd4179;
+    color: #f2ebee;
+    margin-left: 126px;
+    margin-top: 170px;
+    font-size: 30px;
+    font-family: 'LOTTERIADDAG';
+}
+.fifth > .slider > .netflix > img{
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    right: 130px;
+}
+.fifth > .slider > .netflix > img:last-child{
+    width: 600px;
+    position: absolute;
+    top: 360px;
+    right: 290px;
+}
+/***tesla***/
+.fifth > .slider > .tesla{
+    width: 100% ;
+    position: relative;
+    background-color: #252525;
+    padding: 20px;
+}
+.fifth > .slider > .tesla > h3{
+    font-family: 'LOTTERIADDAG';
+    font-size: 40px;
+    color: #f2ebee;
+    padding: 40px;
+    margin-left: 80px;
+}
+.fifth > .slider > .tesla > .t-wrap > .t-info{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 110px;
+}
+.fifth > .slider > .tesla > .t-wrap > .t-info > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+    color: #f2ebee;
+}
+.fifth > .slider > .tesla > .t-wrap > .t-info > p > span{
+    font-weight: bold;
+    font-size: 19px;
+}
+.fifth > .slider > .tesla > .t-wrap > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    line-height: 40px;
+    color: #f2ebee;
+    padding: 30px;
+    margin-left: 100px;
+}
+.fifth > .slider > .tesla > .t-wrap > a > button{
+    padding: 15px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #cd4179;
+    color: #f2ebee;
+    margin-left: 126px;
+    margin-top: 170px;
+    font-size: 30px;
+    font-family: 'LOTTERIADDAG';
+}
+.fifth > .slider > .tesla > img{
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    right: 130px;
+}
+.fifth > .slider > .tesla > img:last-child{
+    width: 400px;
+    position: absolute;
+    top: 280px;
+    right: 390px;
+}
+/****airbnb****/
+.fifth > .slider > .airbnb{
+    width: 100%;
+    position: relative;
+    background-color: #252525;
+    padding: 20px;
+}
+.fifth > .slider > .airbnb > h3{
+    font-family: 'LOTTERIADDAG';
+    font-size: 40px;
+    color: #f2ebee;
+    padding: 40px;
+    margin-left: 80px;
+}
+.fifth > .slider > .airbnb > .a-wrap > .a-info{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 110px;
+}
+.fifth > .slider > .airbnb > .a-wrap > .a-info > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+    color: #f2ebee;
+}
+.fifth > .slider > .airbnb > .a-wrap > .a-info > p > span{
+    font-weight: bold;
+    font-size: 19px;
+}
+.fifth > .slider > .airbnb > .a-wrap > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    line-height: 40px;
+    color: #f2ebee;
+    padding: 30px;
+    margin-left: 100px;
+}
+.fifth > .slider > .airbnb > .a-wrap > a > button{
+    padding: 15px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #cd4179;
+    color: #f2ebee;
+    margin-left: 126px;
+    margin-top: 170px;
+    font-size: 30px;
+    font-family: 'LOTTERIADDAG';
+}
+.fifth > .slider > .airbnb > img{
+    width: 1000px;
+    position: absolute;
+    top: 210px;
+    right: 20px;
+}
+.fifth > .btn{
+    z-index: 10;
+    display: flex;
+    /* justify-content: space-between; */
+    position: absolute;
+    top: 4230px;
+    left: 20px;
+    gap: 1750px;
+}
+.fifth > .btn > button{
+    background: none;
+    border: none;
+    font-size: 50px;
+    padding: 10px;
+    color: #f9f1f4;
+    cursor: pointer;
+}
+.fifth > .btn > button:hover{
+    background-color: rgba(250, 249, 249, 0.1);
+}
+
+/******여섯번째 페이지*****/
+.sixth{
+    background-color: #b4b4b4;
+    overflow: hidden;
+}
+.sixth > h2{
+    font-family: 'LOTTERIADDAG';
+    color: #000;
+    font-size: 70px;
+    padding: 20px;
+    margin-left: 460px;
+}
+.sixth > .slide{
+    width: 300%;
+    display: flex;
+    transition: all 0.5s;
+}
+
+
+/*****quiz******/
+.sixth > .slide > .quiz{
+    width: 100%;
+    position: relative;
+    background-color: #252525;
+    padding: 20px;
+}
+.sixth > .slide > .quiz > h3{
+    font-family: 'LOTTERIADDAG';
+    font-size: 40px;
+    color: #f2ebee;
+    padding: 40px;
+    margin-left: 80px;
+}
+.sixth > .slide > .quiz > .q-wrap > .q-info{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 110px;
+}
+.sixth > .slide > .quiz > .q-wrap > .q-info > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+    color: #f2ebee;
+}
+.sixth > .slide > .quiz > .q-wrap > .q-info > p > span{
+    font-weight: bold;
+    font-size: 19px;
+}
+.sixth > .slide > .quiz > .q-wrap > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    line-height: 40px;
+    color: #f2ebee;
+    padding: 30px;
+    margin-left: 100px;
+}
+.sixth > .slide > .quiz > .q-wrap > a > button{
+    padding: 15px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #cd4179;
+    color: #f2ebee;
+    margin-left: 126px;
+    margin-top: 170px;
+    font-size: 30px;
+    font-family: 'LOTTERIADDAG';
+}
+.sixth > .slide > .quiz > .img{
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    top: 165px;
+    left: 1060px;
+}
+.sixth > .slide > .quiz > .img > img{
+    width: 200px;
+}
+
+
+/*****order******/
+.sixth > .slide > .order{
+    width: 100%;
+    position: relative;
+    background-color: #252525;
+    padding: 20px;
+}
+.sixth > .slide > .order > h3{
+    font-family: 'LOTTERIADDAG';
+    font-size: 40px;
+    color: #f2ebee;
+    padding: 40px;
+    margin-left: 80px;
+}
+.sixth > .slide > .order > .o-wrap > .o-info{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 110px;
+}
+.sixth > .slide > .order > .o-wrap > .o-info > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+    color: #f2ebee;
+}
+.sixth > .slide > .order > .o-wrap > .o-info > p > span{
+    font-weight: bold;
+    font-size: 19px;
+}
+.sixth > .slide > .order > .o-wrap > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    line-height: 40px;
+    color: #f2ebee;
+    padding: 30px;
+    margin-left: 100px;
+}
+.sixth > .slide > .order > .o-wrap > a > button{
+    padding: 15px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #cd4179;
+    color: #f2ebee;
+    margin-left: 126px;
+    margin-top: 170px;
+    font-size: 30px;
+    font-family: 'LOTTERIADDAG';
+}
+.sixth > .slide > .order > img{
+    width: 450px;
+    position: absolute;
+    top: 120px;
+    left: 1310px;
+}
+.sixth > .slide > .order > img:last-child{
+    width: 510px;
+    position: absolute;
+    top: 270px;
+    left: 910px;
+}
+
+
+/******blog*******/
+.sixth > .slide > .blog{
+    width: 100%;
+    position: relative;
+    background-color: #252525;
+    padding: 20px;
+}
+.sixth > .slide > .blog > h3{
+    font-family: 'LOTTERIADDAG';
+    font-size: 40px;
+    color: #f2ebee;
+    padding: 40px;
+    margin-left: 80px;
+}
+.sixth > .slide > .blog > .b-wrap > .b-info{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 110px;
+}
+.sixth > .slide > .blog > .b-wrap > .b-info > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+    color: #f2ebee;
+}
+.sixth > .slide > .blog > .b-wrap > .b-info > p > span{
+    font-weight: bold;
+    font-size: 19px;
+}
+.sixth > .slide > .blog > .b-wrap > p{
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    line-height: 40px;
+    color: #f2ebee;
+    padding: 30px;
+    margin-left: 100px;
+}
+.sixth > .slide > .blog > .b-wrap > .btn{
+    margin-left: 126px;
+    margin-top: 180px;
+    position: relative;
+    z-index: 10;
+}
+.sixth > .slide > .blog > .b-wrap > .btn > a > button{
+    padding: 15px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #cd4179;
+    color: #f2ebee;
+    font-size: 30px;
+    font-family: 'LOTTERIADDAG';
+}
+.sixth > .slide > .blog > img{
+    width: 650px;
+    position: absolute;
+    top: 110px;
+    left: 1140px;
+}
+.sixth > .slide > .blog > img:last-child{
+    width: 690px;
+    position: absolute;
+    top: 250px;
+    left: 710px;
+}
+.sixth > .wbtn{
+    z-index: 10;
+    display: flex;
+    /* justify-content: space-between; */
+    position: absolute;
+    top: 5050px;
+    left: 20px;
+    gap: 1750px;
+}
+.sixth > .wbtn > button{
+    background: none;
+    border: none;
+    font-size: 50px;
+    padding: 10px;
+    color: #f9f1f4;
+    cursor: pointer;
+}
+.sixth > .wbtn > button:hover{
+    background-color: rgba(250, 249, 249, 0.1);
+}
+
+/******일곱번째 페이지******/
+.seventh > .slide_wrapper > .slides > li{
+    list-style: none;
+}
+.seventh > .slide_wrapper > .slides > li > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+@keyframes moveText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
