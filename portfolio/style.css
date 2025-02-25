@@ -1135,10 +1135,6 @@ body{
     right: 40px;
     bottom: 40px;
 }
-.return > span{
-    color: #000;
-}
-
 @keyframes fadeInDown {
     0% {
         opacity: 0;
