@@ -1166,26 +1166,3 @@ body{
 	0% {margin-top: 0px;}
 	100% {margin-top: 10px;}
   }
-
-
-/* 데스크탑 기본 스타일 */
-
-/* 모바일 버전 */
-@media (max-width: 768px){
-    .first > .banner{
-    font-size: 15px;
-    gap: 50px;
-    }
-    .first > h1{
-        font-size: 100px;
-        line-height: 130px;
-    }
-}
-
-
-
-
-
-  /* 태블릿 버전 */
-  @media (max-width: 1024px) and (min-width: 769px) {}
-  
