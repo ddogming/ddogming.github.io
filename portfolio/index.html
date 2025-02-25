@@ -21,6 +21,7 @@
             <p>010-4748-0117 <br> tpdus9170@naver.com</p>
             </div>
         <img src="./images/profile-card.png" alt="사원증">
+        <div class="icon"><img src="./images/free-icon-scrolling-3960075.png" alt="스크롤"><span>Please Scroll!</span></div>
     </section>
     <section class="second">
         <!-- <p>DEVELOP BEYOND MY BOUNDARIES DEVELOP BEYOND MY BOUNDARIES DEVELOP BEYOND MY BOUNDARIES DEVELOP BEYOND MY BOUNDARIES DEVELOP BEYOND MY BOUNDARIES DEVELOP BEYOND MY BOUNDARIES DEVELOP BEYOND MY BOUNDARIES</p> -->
@@ -63,18 +64,19 @@
         </div>
     </div>
     </section>
-    <section class="fourth">
+    <section class="fourth" id="menu">
         <h2>SHOW MY PROJECT</h2>
         <p>PLEASE CHOOSE MY ABILITY</p>
         <div class="btn">
-            <div class="clone"><p>CLONE SITE <br> PUBLISHING</p></div>
-            <div class="web"><p>WEBSITE <br> PUBLISHING</p></div>
-            <div class="ani"><p>ANIMATION</p></div>
-            <div class="design"><p>UX/UI <br> DESIGN</p></div>
-            <div class="js"><p>JAVASCRIPT</p></div>
+            
+            <button type="button" class="clone" onclick="location.href='#fifth'"><p>CLONE SITE <br> PUBLISHING</p></button>
+            <button type="button" class="web" onclick="location.href='#sixth'"><p>WEBSITE <br> PUBLISHING</p></button>
+            <button type="button" class="design" onclick="location.href='#eighth'"><p>UX/UI<br>DESIGN</p></button>
+            <button type="button" class="ani" onclick="location.href='#seventh'"><p>ANIMATION</p></button>
+            <button type="button" class="js" onclick="location.href='#ninth'"><p>JAVASCRIPT</p></button>
         </div>    
     </section>
-    <section class="fifth">
+    <section class="fifth" id="fifth">
         <h2>CLONE SITE PUBLISHING</h2>
           <div class="slider">
             <div class="netflix">
@@ -147,7 +149,7 @@
           </div>
       </section>
 
-    <section class="sixth">
+    <section class="sixth" id="sixth">
         <h2>WEBSITE PUBLISHING</h2>
         <div class="slide">
             <div class="quiz">
@@ -211,7 +213,7 @@
           </div>
     </section>
 
-<section class="seventh">
+<section class="seventh" id="seventh">
     <h2>ANIMATION</h2>
     <div class="container">
         <div class="slide" style="background-image: url(./images/그리드.png);">
@@ -238,7 +240,7 @@
         </div>
     </div>
 </section>
-<section class="eighth">
+<section class="eighth" id="eighth">
     <div class="container">
         <div class="slide" style="background-image: url(./images/u1.png);">
             <h3>Photoshop/Illustrator를 이용한 상세페이지</h3>
@@ -256,7 +258,7 @@
     </div>
     <h2>UX/UI DESIGN</h2>
 </section>
-<section class="ninth">
+<section class="ninth" id="ninth">
     <h2>JAVASCRIPT</h2>
     <div class="container">
         <div class="slide" style="background-image: url(./images/scroll.PNG);">
@@ -264,26 +266,43 @@
             <a href="https://ddogming.github.io/infinite-scroll/" target='_blank'><button>SITE 바로가기</button></a>
         </div>
         <div class="slide" style="
-              background-image: url(./images/skillbar.png);
+              background-image: url(./images/calc.png);
             ">
             <h3>Date Calculator</h3>
-            <a href="https://ddogming.github.io/skillBar/skillBar.html" target='_blank'><button>SITE 바로가기</button></a>
+            <a href="https://ddogming.github.io/calcdate/calcdate.html" target='_blank'><button>SITE 바로가기</button></a>
         </div>
         <div class="slide" style="
               background-image: url(./images/login.png);
             ">
             <h3>LOGIN INTERACTION</h3>
-            <a href="https://ddogming.github.io/netflix_clone/login" target='_blank'><button>SITE 바로가기</button></a>
+            <a href="https://ddogming.github.io/netflix_clone/" target='_blank'><button>SITE 바로가기</button></a>
         </div>
         <div class="slide" style="
-              background-image: url(./images/pall.PNG);
+              background-image: url(./images/attendance.png);
             ">
             <h3>Attendance Management</h3>
-            <a href="https://ddogming.github.io/parallax/parallax.html" target='_blank'><button>SITE 바로가기</button></a>
+            <a href="https://ddogming.github.io/chart/" target='_blank'><button>SITE 바로가기</button></a>
         </div>
     </div>
 </section>
-
+<section class="tenth">
+    <h3>THANK YOU FOR</h3>
+    <p>LOOKING AT</p>
+    <p>MY PORTFOLIO</p>
+    <div class="contact">
+        <p>Contact</p>
+        <br>
+        <p>010-4748-0117 <br> tpdus9170@naver.com</p>
+        </div>
+    <div class="footer">
+        <p>WEB DESIGN</p>
+        <p>2025 PORTFOLIO</p>
+        <p>KIM SE YEON</p>
+    </div>
+</section>
+<div class="return">
+    <a href="#menu"><img src="./images/free-icon-left-align-8020026.png" alt="돌아가기 아이콘"></a>
+  </div>
 
     <script>
         const slider = document.querySelector(".slider");
@@ -294,6 +313,7 @@
         const wnextBtn = document.getElementById("wnext");
         let index = 0;
         const slideWidth = document.documentElement.clientWidth;
+        const clientHeight = document.documentElement.clientHeight;
     
         nextBtn.addEventListener("click", () => {
           if (index < 3) {
@@ -344,6 +364,21 @@
 }
 
 slidesPlugin();
+//
+const cloneElem = document.querySelector('#fifth');
+const lastElem = document.querySelector(".tenth");
+const returnElem = document.querySelector(".return");
+window.addEventListener("scroll",()=>{
+    const scrollTop = document.documentElement.scrollTop;
+    console.log( scrollTop , cloneElem.offsetTop , lastElem.offsetTop );
+    if( scrollTop >= cloneElem.offsetTop && scrollTop < (lastElem.offsetTop-clientHeight)){
+        returnElem.style.display = "block";
+    } else {
+        returnElem.style.display = "none";
+    }
+});
+
       </script>
+
 </body>
 </html>
