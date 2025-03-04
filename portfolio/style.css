@@ -1349,7 +1349,7 @@ body{
     }
     /*******************/
     .fifth{
-        width: 767px
+        width: 767px;
         height: 100vh;
     }
     .fifth > h2{
@@ -1548,205 +1548,290 @@ body{
     }
     /*************************************/
     .sixth{
-        width: 767px
-        height: 100%;
+        width: 767px;
+        height: 100vh;
     }
     .sixth > h2{
         font-size: 45px;
-        padding: 5;
+        padding-top: 1px;
         margin-left: 70px;
     }
     .sixth > .slider{
-        width: 400vh;
+        width: 300vh;
     }
     /**************************************/
     .sixth > .slider > .quiz{
         width: 100%;
+        padding: 0;
     }
-    .sixth > .slider > .quiz > h3{
+    .sixth > .slide > .quiz > h3{
         font-size: 35px;
-        margin-left: -50px;
+        padding: 0;
+        margin-left: -19px;
+        margin-top: 50px;
     }
-    .sixth > .slider > .quiz > .q-wrap > .q-info{
+    .sixth > .slide > .quiz > .q-wrap > .q-info{
         margin-left: -30px;
+        margin-top: 40px;
     }
-    .sixth > .slider > .quiz > .q-wrap > .q-info > p{
-        font-size: 15px;
+    .sixth > .slide > .quiz > .q-wrap > .q-info > p{
+        font-size: 14px;
     }
-    .sixth > .slider > .quiz > .q-wrap > .q-info > p > span{
-        font-size: 18px;
+    .sixth > .slide > .quiz > .q-wrap > .q-info > p > span{
+        font-size: 17px;
     }
-    .sixth > .slider > .quiz > .q-wrap > p{
-        font-size: 15px;
+    .sixth > .slide > .quiz > .q-wrap > p{
+        font-size: 16px;
         padding: 0;
         line-height: 40px;
         margin-left: -10px;
-        margin-top: 30px;
+        margin-top: 40px;
     }
-    .sixth > .slider > .quiz > .q-wrap > a > button{
+    .sixth > .slide > .quiz > .q-wrap > a > button{
         width: 200px;
         height: 70px;
         font-size: 20px;
         padding: 10px;
         margin-left: 10px;
-        margin-top: 300px;
+        margin-top: 280px;
     }
-    .sixth > .slider > .quiz > img{
-        width: 255px;
-        height: 350px;
-        top: 380px;
-        left: 480px;
+    .sixth > .slide > .quiz > .img{
+        width: 180px;
+        height: 280px;
+        top: 450px;
+        left: 270px;
         
     }
-    .sixth > .slider > .quiz > img:last-child{
-        width: 400px;
-        height: 220px;
-        top: 550px;
-        left: 250px;
-    }
     /************************/
-    .sixth > .slider > .tesla{
+    .sixth > .slide > .order{
         width: 100%;
     }
-    .sixth > .slider > .tesla > h3{
+    .sixth > .slide > .order > h3{
         font-size: 35px;
-        margin-left: -150px;
+        margin-left: -50px;
     }
-    .sixth > .slider > .tesla > h3 > span{
+    .sixth > .slide > .order > h3 > span{
         display: flex;
-        margin-left: 130px;
+        margin-left: 170px;
     }
-    .sixth > .slider > .tesla > .t-wrap > .t-info{
-        margin-left: -130px;
+    .sixth > .slide > .order > .o-wrap > .o-info{
+        margin-left: -30px;
         margin-top: -10px;
     }
-    .sixth > .slider > .tesla > .t-wrap > .t-info > p{
+    .sixth > .slide > .order > .o-wrap > .o-info > p{
         font-size: 15px;
     }
-    .sixth > .slider > .tesla > .t-wrap > .t-info > p > span{
+    .sixth > .slide > .order > .o-wrap > .o-info > p > span{
         font-size: 18px;
     }
-    .sixth > .slider >.tesla > .t-wrap > p{
+    .sixth > .slide >.order > .o-wrap > p{
+        font-size: 16px;
+        padding: 0;
+        line-height: 40px;
+        margin-left: -10px;
+        margin-top: 30px;
+    }
+    .sixth > .slide > .order > .o-wrap > a > button{
+        width: 200px;
+        height: 70px;
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 30px;
+        margin-top: 270px;
+    }
+    .sixth > .slide > .order > img{
+        width: 250px;
+        height: 300px;
+        top: 410px;
+        left: 460px;
+        
+    }
+    .sixth > .slide > .order > img:last-child{
+        width: 370px;
+        height: 300px;
+        top: 480px;
+        left: 230px;
+    }
+    /***************************/
+    .sixth > .slide > .blog{
+        width: 100%;
+    }
+    .sixth > .slide > .blog > h3{
+        font-size: 34px;
+        margin-left: -55px;
+        line-height: 50px;
+    }
+    .sixth > .slide > .blog > h3 > span{
+        display: flex;
+        margin-left: 4px;
+    }
+    .sixth > .slide > .blog > .b-wrap > .b-info{
+        margin-left: -30px;
+        margin-top: -8px;
+    }
+    .sixth > .slide > .blog > .b-wrap > .b-info > p{
+        font-size: 15px;
+    }
+    .sixth > .slide > .blog > .b-wrap > .b-info > p > span{
+        font-size: 18px;
+    }
+    .sixth > .slide >.blog > .b-wrap > p{
         font-size: 15px;
         padding: 0;
         line-height: 40px;
-        margin-left: -110px;
-        margin-top: 10px;
+        margin-left: -10px;
+        margin-top: 20px;
     }
-    .sixth > .slider > .tesla > .t-wrap > a > button{
+    .sixth > .slide > .blog > .b-wrap > .btn{
+        margin-top: 170px;
+    }
+    .sixth > .slide > .blog > .b-wrap > .btn > a > button{
         width: 200px;
         height: 70px;
         font-size: 20px;
         padding: 10px;
         margin-left: -100px;
-        margin-top: 280px;
+        margin-top: 30px;
+        display: block;
     }
-    .sixth > .slider > .tesla > img{
-        width: 245px;
-        height: 350px;
-        top: 380px;
-        left: 380px;
-        
+    .sixth > .slide > .blog > img{
+        width: 360px;
+        height: 300px;
+        top: 420px;
+        left: 370px;
     }
-    .sixth > .slider > .tesla > img:last-child{
-        width: 280px;
-        height: 220px;
-        top: 510px;
-        left: 200px;
-    }
-    /***************************/
-    .sixth > .slider > .airbnb{
-        width: 100%;
-    }
-    .sixth > .slider > .airbnb > h3{
-        font-size: 35px;
-        margin-left: -260px;
-    }
-    .sixth > .slider > .airbnb > h3 > span{
-        display: flex;
-        margin-left: 160px;
-    }
-    .sixth > .slider > .airbnb > .a-wrap > .a-info{
-        margin-left: -240px;
-    }
-    .sixth > .slider > .airbnb > .a-wrap > .a-info > p{
-        font-size: 15px;
-    }
-    .sixth > .slider > .airbnb > .a-wrap > .a-info > p > span{
-        font-size: 18px;
-    }
-    .sixth > .slider >.airbnb > .a-wrap > p{
-        font-size: 15px;
-        padding: 0;
-        line-height: 40px;
-        margin-left: -220px;
-        margin-top: 10px;
-    }
-    .sixth > .slider > .airbnb > .a-wrap > a > button{
-        width: 200px;
-        height: 70px;
-        font-size: 20px;
-        padding: 10px;
-        margin-left: -200px;
-        margin-top: 270px;
-    }
-    .sixth > .slider > .airbnb > img{
-        width: 550px;
-        height: 280px;
-        top: 480px;
-        left: -10px;
-        
-    }
-    /******************/
-    .sixth > .slider > .momentum{
-        width: 100%;
-    }
-    .sixth > .slider > .momentum > h3{
-        font-size: 35px;
-        margin-left: -370px;
-    }
-    .sixth > .slider > .momentum > h3 > span{
-        display: flex;
-        margin-left: 200px;
-    }
-    .sixth > .slider > .momentum > .m-wrap > .m-info{
-        margin-left: -340px;
-    }
-    .sixth > .slider > .momentum > .m-wrap > .m-info > p{
-        font-size: 15px;
-    }
-    .sixthh > .slider > .momentum > .m-wrap > .m-info > p > span{
-        font-size: 18px;
-    }
-    .sixth > .slider > .momentum > .m-wrap > p{
-        font-size: 15px;
-        padding: 0;
-        line-height: 40px;
-        margin-left: -320px;
-        margin-top: 5px;
-    }
-    .sixth > .slider > .momentum > .m-wrap > a > button{
-        width: 200px;
-        height: 70px;
-        font-size: 20px;
-        padding: 10px;
-        margin-left: -300px;
-        margin-top: 270px;
-    }
-    .sixth > .slider > .momentum > img{
-        width: 395px;
-        height: 350px;
-        top: 380px;
-        left: 20px;      
+    .sixth > .slide > .blog > img:last-child{
+        width: 340px;
+        height: 300px;
+        top: 460px;
+        left: 160px;
     }
     /*******************************/
-    .sixth > .btn{
-        gap: 690px;
-        left: -8px;
-        top: 3950px;
+    .sixth > .wbtn{
+        gap: 680px;
+        left: -2px;
+        top: 4820px;
+    }
+    /********************************/
+    .seventh{
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .seventh > h2{
+        font-size: 70px;
+        margin-left: 145px;
+        margin-top: 30px;
+    }
+    .seventh > .container{
+        width: 750px;
+        margin-left: -10px;
+        margin-top: 60px;
+    }
+    .seventh > .container > .slide{
+        width: 100px;
+        padding: 10px;
+    }
+    .seventh > .container > .slide > h3{
+        font-size: 30px;
+        top: 30px;
+    }
+    .seventh > .container > .slide > a > button{
+        height: 40px;
+        top: 540px;
+        left: -7px;
+    }
+    /*************************/
+    .eighth{
+        width: 100%;
+        height: 100vh;
+        /* display: block; */
+    }
+    .eighth > h2{
+        font-size: 80px;
+        position: absolute;
+        margin-left: -90px;
+        margin-top: 450px;
+    }
+    .eighth > .container{
+        width: 750px;
+        margin-left: -10px;
+        margin-top: -250px;
+        /* display: block; */
+    }
+    .eighth > .container > .slide{
+        width: 700px;
+        height: 300px;
+        padding: 10px;
+    }
+    .eighth > .container > .slide > h3{
+        font-size: 30px;
+        background-color: #000;
+    }
+    .eighth > .container > .slide > a > button{
+        height: 40px;
+        top: 540px;
+        left: -7px;
+    }
+    /***************************/
+    .ninth{
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .ninth > h2{
+        font-size: 70px;
+        margin-left: 135px;
+        margin-top: 30px;
+    }
+    .ninth > .container{
+        width: 750px;
+        margin-left: -10px;
+        margin-top: 100px;
+    }
+    .ninth > .container > .slide{
+        width: 100px;
+        padding: 10px;
+    }
+    .ninth > .container > .slide > h3{
+        font-size: 30px;
+        top: 30px;
+    }
+    .ninth > .container > .slide > a > button{
+        height: 40px;
+        top: 540px;
+        left: -7px;
+    }
+    /*******************/
+    .tenth{
+        width: 100%;
+        height: 100vh;
+    }
+    .tenth > h3{
+        font-size: 70px;
+        margin-left: 20px;
+    }
+    .tenth > p{
+        font-size: 70px;
+        margin-left: 20px;
+    }
+    .tenth > p:nth-child(3){
+        top: 720px;
+        left: 80px;
+        padding: 10px;
+        border-radius: 70px;
+    }
+    .tenth  > .footer{
+        top: 850px;
+        gap: 100px;
+        left: 150px;
+    }
+    .tenth > .contact{
+        top: 580px;
+        right: 20px;
+        text-align: right;
     }
 }
-  
   /* 태블릿 버전: 768px ~ 1024px */
   @media (min-width: 768px) and (max-width: 1024px) {}
   
