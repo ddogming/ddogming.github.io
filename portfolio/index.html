@@ -368,16 +368,17 @@ slidesPlugin();
 const cloneElem = document.querySelector('#fifth');
 const lastElem = document.querySelector(".tenth");
 const returnElem = document.querySelector(".return");
-window.addEventListener("scroll",()=>{
+const scrollEvent = ()=>{
     const scrollTop = document.documentElement.scrollTop;
-    console.log( scrollTop , cloneElem.offsetTop , lastElem.offsetTop );
+    // console.log( scrollTop , cloneElem.offsetTop , lastElem.offsetTop );
     if( scrollTop >= cloneElem.offsetTop && scrollTop < (lastElem.offsetTop-clientHeight)){
         returnElem.style.display = "block";
     } else {
         returnElem.style.display = "none";
     }
-});
-
+}
+window.addEventListener("scroll",scrollEvent);
+scrollEvent();
       </script>
 
 </body>
