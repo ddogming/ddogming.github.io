@@ -413,6 +413,9 @@ body{
     padding: 30px;
     margin-left: 100px;
 }
+.fifth > .slider > .netflix > .n-wrap > p > .tab{
+    display: none;
+}
 .fifth > .slider > .netflix > .n-wrap > a > button{
     padding: 15px 60px;
     border-radius: 10px;
@@ -472,6 +475,9 @@ body{
     color: #f2ebee;
     padding: 30px;
     margin-left: 100px;
+}
+.fifth > .slider > .tesla > .t-wrap > p > .tab{
+    display: none;
 }
 .fifth > .slider > .tesla > .t-wrap > a > button{
     padding: 15px 60px;
@@ -533,6 +539,9 @@ body{
     padding: 30px;
     margin-left: 100px;
 }
+.fifth > .slider > .airbnb > .a-wrap > p > .tab{
+    display: none;
+}
 .fifth > .slider > .airbnb > .a-wrap > a > button{
     padding: 15px 60px;
     border-radius: 10px;
@@ -569,6 +578,9 @@ body{
     gap: 30px;
     padding: 20px;
     margin-left: 110px;
+}
+.fifth > .slider > .momentum > .m-wrap > p > .tab{
+    display: none;
 }
 .fifth > .slider > .momentum > .m-wrap > .m-info > p{
     font-family: 'Pretendard-Regular';
@@ -670,6 +682,9 @@ body{
     font-size: 17px;
     color: #f2ebee;
 }
+.sixth > .slide > .quiz > .q-wrap > .q-info > p > .tab{
+    display: none;
+}
 .sixth > .slide > .quiz > .q-wrap > .q-info > p > span{
     font-weight: bold;
     font-size: 19px;
@@ -681,6 +696,9 @@ body{
     color: #f2ebee;
     padding: 30px;
     margin-left: 100px;
+}
+.sixth > .slide > .quiz > .q-wrap > p > .tab{
+    display: none;
 }
 .sixth > .slide > .quiz > .q-wrap > a > button{
     padding: 15px 60px;
@@ -741,6 +759,9 @@ body{
     color: #f2ebee;
     padding: 30px;
     margin-left: 100px;
+}
+.sixth > .slide >.order > .o-wrap > p > .tab{
+    display: none;
 }
 .sixth > .slide > .order > .o-wrap > a > button{
     padding: 15px 60px;
@@ -803,6 +824,9 @@ body{
     color: #f2ebee;
     padding: 30px;
     margin-left: 100px;
+}
+.sixth > .slide >.blog > .b-wrap > p > .tab{
+    display: none;
 }
 .sixth > .slide > .blog > .b-wrap > .btn{
     margin-left: 126px;
@@ -1167,6 +1191,7 @@ body{
 /* 모바일 버전: 최대 768px */
 @media (max-width: 768px) {
     .first{
+        width: 100%;
         height: 100vh;
     }
     .first > .banner{
@@ -1197,7 +1222,7 @@ body{
         left: 340px;
     }
     .second{
-        width: 768px;
+        width: 100%;
         height: 100vh;
     }
     .second > h2{
@@ -1224,7 +1249,7 @@ body{
         left: 1px;
     }
     .third{
-        width: 768px;
+        width: 100%;
         height: 100vh;
     }
     .third > h2 {
@@ -1269,7 +1294,7 @@ body{
         width: 52px;
     }
     .fourth{
-        width: 768px;
+        width: 100%;
         height: 100vh;
         background-size: 768px;
         background-repeat: no-repeat;
@@ -1349,7 +1374,7 @@ body{
     }
     /*******************/
     .fifth{
-        width: 767px;
+        width: 100%;
         height: 100vh;
     }
     .fifth > h2{
@@ -1548,7 +1573,7 @@ body{
     }
     /*************************************/
     .sixth{
-        width: 767px;
+        width: 100%;
         height: 100vh;
     }
     .sixth > h2{
@@ -1556,11 +1581,11 @@ body{
         padding-top: 1px;
         margin-left: 70px;
     }
-    .sixth > .slider{
+    .sixth > .slide{
         width: 300vh;
     }
     /**************************************/
-    .sixth > .slider > .quiz{
+    .sixth > .slide > .quiz{
         width: 100%;
         padding: 0;
     }
@@ -1833,5 +1858,720 @@ body{
     }
 }
   /* 태블릿 버전: 768px ~ 1024px */
-  @media (min-width: 768px) and (max-width: 1024px) {}
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .first{
+        width: 100%;
+        height: 100vh;
+    }
+    .first > .banner{
+        gap: 300px;
+    }
+    .first > h1{
+        font-size: 110px;
+        top: 220px;
+        left: 1px;
+        color: #fff;
+        line-height: 170px;
+    }
+    .first > .contact{
+        left: 20px;
+    }
+    .first > .contact > p{
+        font-size: 30px;
+    }
+    .first > img{
+        width: 330px;
+        z-index: -1;
+        top: -370px;
+        left: 520px;
+    } 
+    .first > .icon{
+        top: 1200px;
+        left: 460px;
+    }
+    .second{
+        width: 100%;
+        height: 100vh;
+    }
+    .second > h2{
+        font-size: 50px;
+        top: 200px;
+        left: 22px;
+        line-height: 60px;
+    }
+    .second > .explain{
+        top: 520px;
+        left: 10px;
+    }
+    .second > .explain > p {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .second > .key > ul{
+        gap: 7px;
+    }
+    .second > .key > ul > li{
+        width: 150px;
+        padding: 30px 45px;
+        font-size: 30px;
+        top: 1010px;
+        left: 1px;
+    }
+    .third{
+        width: 100%;
+        height: 100vh;
+    }
+    .third > h2 {
+        font-size: 100px;
+        top: 140px;
+        left: 80px;
+    }
+    .third > img{
+        width: 180px;
+        top: 100px;
+        left: 740px;
+    }
+    .third > .container{
+        width: 900px;
+        height: 800px;
+        top: 390px;
+        left: 53px;
+    }
+    .third > .container > .info{
+        top: 80px;
+        left: 30px;
+    } 
+    .third > .container > .info > p{
+        font-size: 40px;
+        padding: 5px;
+    }
+    .third > .container > .dec{
+        top: 320px;
+        left: 30px;
+    }
+    .third > .container > .dec > p{
+        font-size: 40px;
+        padding: 4px 0;
+    }
+    .third > .container > .skill{
+        top: 550px;
+        left: 30px;
+    }
+    .third > .container > .skill > p{
+        font-size: 40px;
+    }
+    .third > .container > .skill > img{
+        width: 80px;
+    }
+    .fourth{
+        width: 100%;
+        height: 100vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .fourth > h2{
+        font-size: 70px;
+        top: 40px;
+        left: 110px;
+    }
+    .fourth > p{
+        font-size: 30px;
+        top: 140px;
+        left: 285px;
+    }
+    .fourth > .btn{
+        display: block;
+        align-items: center;
+        top: 316px;
+        width: 100%;
+        height: 1050px;
+    }
+    .fourth > .btn > .clone{
+        width: 900px;
+        height: 150px;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+    .fourth > .btn > .clone > p{
+        font-size: 55px;
+        top: 140px;
+        left: 95px;
+    }
+    .fourth > .btn > .clone > p > br.pc{
+        display: none;
+    }
+    .fourth > .btn > .web{
+        width: 900px;
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 53px;
+    }
+    .fourth > .btn > .web > p{
+        font-size: 55px;
+        top: 310px;
+        left: 145px;
+    }
+    .fourth > .btn > .web > p > br.pc{
+        display: none;
+    }
+    .fourth > .btn > .design{
+        width: 900px;
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 53px;
+    }
+    .fourth > .btn > .design > p{
+        font-size: 55px;
+        top: 485px;
+        left: 270px;
+    }
+    .fourth > .btn > .design > p > br.pc{
+        display: none;
+    }
+    .fourth > .btn > .ani{
+        width: 900px;
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 53px;
+    }
+    .fourth > .btn > .ani > p{
+        font-size: 55px;
+        top: 655px;
+        left: 310px;
+    }
+    .fourth > .btn > .js{
+        width: 900px;
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 53px;
+    }
+    .fourth > .btn > .js > p{
+        font-size: 55px;
+        top: 825px;
+        left: 125px;
+    }
+    /*******************/
+    .fifth{
+        width: 100%;
+        height: 100vh;
+    }
+    .fifth > h2{
+        font-size: 60px;
+        padding: 40px;
+        margin-left: 20px;
+    }
+    .fifth > .slider{
+        width: 400vh;
+    }
+    /**************************************/
+    .fifth > .slider > .netflix{
+        width: 100%;
+        height: 1164px;
+    }
+    .fifth > .slider > .netflix > h3{
+        font-size: 48px;
+        margin-left: -50px;
+        margin-top: 70px;
+    }
+    .fifth > .slider > .netflix > .n-wrap > .n-info{
+        margin-left: -30px;
+        margin-top: 40px;
+    }
+    .fifth > .slider > .netflix > .n-wrap > .n-info > p{
+        font-size: 22px;
+    }
+    .fifth > .slider > .netflix > .n-wrap > .n-info > p > span{
+        font-size: 25px;
+    }
+    .fifth > .slider > .netflix > .n-wrap > p{
+        font-size: 28px;
+        padding: 20px;
+        line-height: 50px;
+        margin-left: -20px;
+        margin-top: 30px;
+    }
+    .fifth > .slider > .netflix > .n-wrap > p > .tab{
+        display: flex;
+    }
+    .fifth > .slider > .netflix > .n-wrap > a > button{
+        width: 250px;
+        height: 80px;
+        font-size: 25px;
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 400px;
+    }
+    .fifth > .slider > .netflix > img{
+        width: 370px;
+        height: 500px;
+        top: 650px;
+        left: 580px;
+        
+    }
+    .fifth > .slider > .netflix > img:last-child{
+        width: 480px;
+        height: 270px;
+        top: 930px;
+        left: 270px;
+    }
+    /************************/
+    .fifth > .slider > .tesla{
+        width: 100%;
+        height: 1164px;
+    }
+    .fifth > .slider > .tesla > h3{
+        font-size: 48px;
+        margin-left: -410px;
+        margin-top: 70px;
+    }
+    .fifth > .slider > .tesla > h3 > span{
+        display: flex;
+        margin-left: 130px;
+    }
+    .fifth > .slider > .tesla > .t-wrap > .t-info{
+        margin-left: -380px;
+        margin-top: -20px;
+    }
+    .fifth > .slider > .tesla > .t-wrap > .t-info > p{
+        font-size: 22px;
+    }
+    .fifth > .slider > .tesla > .t-wrap > .t-info > p > span{
+        font-size: 25px;
+    }
+    .fifth > .slider >.tesla > .t-wrap > p{
+        font-size: 28px;
+        padding: 20px;
+        line-height: 50px;
+        margin-left: -380px;
+        margin-top: 30px;
+    }
+    .fifth > .slider > .tesla > .t-wrap > p > .tab{
+        display: flex;
+    }
+    .fifth > .slider > .tesla > .t-wrap > a > button{
+        width: 250px;
+        height: 80px;
+        font-size: 25px;
+        padding: 10px;
+        margin-left: -330px;
+        margin-top: 360px;
+    }
+    .fifth > .slider > .tesla > img{
+        width: 330px;
+        height: 480px;
+        top: 680px;
+        left: 250px;
+        
+    }
+    .fifth > .slider > .tesla > img:last-child{
+        width: 350px;
+        height: 280px;
+        top: 880px;
+        left: 10px;
+    }
+    /***************************/
+    .fifth > .slider > .airbnb{
+        width: 100%;
+        height: 1164px;
+    }
+    .fifth > .slider > .airbnb > h3{
+        font-size: 48px;
+        margin-left: -770px;
+        margin-top: 70px;
+    }
+    .fifth > .slider > .airbnb > h3 > span{
+        display: flex;
+        margin-left: 160px;
+    }
+    .fifth > .slider > .airbnb > .a-wrap > .a-info{
+        margin-left: -740px;
+        margin-top: -20px;
+    }
+    .fifth > .slider > .airbnb > .a-wrap > .a-info > p{
+        font-size: 22px;
+    }
+    .fifth > .slider > .airbnb > .a-wrap > .a-info > p > span{
+        font-size: 25px;
+    }
+    .fifth > .slider >.airbnb > .a-wrap > p{
+        font-size: 28px;
+        padding: 20px;
+        line-height: 50px;
+        margin-left: -740px;
+        margin-top: 30px;
+    }
+    .fifth > .slider > .airbnb > .a-wrap > p > .tab{
+        display: flex;
+    }
+    .fifth > .slider > .airbnb > .a-wrap > a > button{
+        width: 250px;
+        height: 80px;
+        font-size: 25px;
+        padding: 10px;
+        margin-left: -690px;
+        margin-top: 410px;
+    }
+    .fifth > .slider > .airbnb > img{
+        width: 810px;
+        height: 390px;
+        top: 830px;
+        left: -500px;
+        
+    }
+    /******************/
+    .fifth > .slider > .momentum{
+        width: 100%;
+        height: 1164px;
+    }
+    .fifth > .slider > .momentum > h3{
+        font-size: 48px;
+        margin-left: -1130px;
+        margin-top: 70px;
+    }
+    .fifth > .slider > .momentum > h3 > span{
+        display: flex;
+        margin-left: 200px;
+    }
+    .fifth > .slider > .momentum > .m-wrap > .m-info{
+        margin-left: -1101px;
+        margin-top: -20px;
+    }
+    .fifth > .slider > .momentum > .m-wrap > .m-info > p{
+        font-size: 22px;
+    }
+    .fifth > .slider > .momentum > .m-wrap > .m-info > p > span{
+        font-size: 25px;
+    }
+    .fifth > .slider > .momentum > .m-wrap > p{
+        font-size: 28px;
+        padding: 20px;
+        line-height: 50px;
+        margin-left: -1100px;
+        margin-top: 30px;
+    }
+    .fifth > .slider > .momentum > .m-wrap > p > .tab{
+        display: flex;
+    }
+    .fifth > .slider > .momentum > .m-wrap > a > button{
+        width: 250px;
+        height: 80px;
+        font-size: 25px;
+        padding: 10px;
+        margin-left: -1040px;
+        margin-top: 450px;
+    }
+    .fifth > .slider > .momentum > img{
+        width: 560px;
+        height: 450px;
+        top: 700px;
+        left: -710px;      
+    }
+    /*******************************/
+    .fifth > .btn{
+        gap: 915px;
+        left: -2px;
+        top: 6250px;
+    }
+    /*************************************/
+    .sixth{
+        width: 100%;
+        height: 100vh;
+    }
+    .sixth > h2{
+        font-size: 60px;
+        padding: 40px;
+        margin-left: 70px;
+    }
+    .sixth > .slide{
+        width: 300vh;
+    }
+    /**************************************/
+    .sixth > .slide > .quiz{
+        width: 100%;
+        height: 1164px;
+    }
+    .sixth > .slide > .quiz > h3{
+        font-size: 48px;
+        margin-left: -50px;
+        margin-top: 70px;
+    }
+    .sixth > .slide > .quiz > h3 > span{
+        display: block;
+        margin-left: 250px;
+    }
+    .sixth > .slide > .quiz > .q-wrap > .q-info{
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .sixth > .slide > .quiz > .q-wrap > .q-info > p{
+        font-size: 22px;
+    }
+    .sixth > .slide > .quiz > .q-wrap > .q-info > p > .tab{
+        display: flex;
+    }
+    .sixth > .slide > .quiz > .q-wrap > .q-info > p > span{
+        font-size: 25px;
+    }
+    .sixth > .slide > .quiz > .q-wrap > p{
+        font-size: 28px;
+        padding: 20px;
+        line-height: 50px;
+        margin-left: -20px;
+        margin-top: 30px;
+    }
+    .sixth > .slide > .quiz > .q-wrap > p > .tab{
+        display: flex;
+    }
+    .sixth > .slide > .quiz > .q-wrap > a > button{
+        width: 250px;
+        height: 80px;
+        font-size: 25px;
+        padding: 10px;
+        margin-left: 20px;
+        margin-top: 370px;
+    }
+    .sixth > .slide > .quiz > .img{
+        width: 600px;
+        height: 390px;
+        top: 760px;
+        left: 350px;
+        
+    }
+    /************************/
+    .sixth > .slide > .order{
+        width: 100%;
+        height: 1164px;
+    }
+    .sixth > .slide > .order > h3{
+        font-size: 48px;
+        margin-left: -410px;
+        margin-top: 70px;
+    }
+    .sixth > .slide > .order > h3 > span{
+        display: flex;
+        margin-left: 170px;
+    }
+    .sixth > .slide > .order > .o-wrap > .o-info{
+        margin-left: -390px;
+        margin-top: -20px;
+    }
+    .sixth > .slide > .order > .o-wrap > .o-info > p{
+        font-size: 22px;
+    }
+    .sixth > .slide > .order > .o-wrap > .o-info > p > span{
+        font-size: 25px;
+    }
+    .sixth > .slide >.order > .o-wrap > p{
+        font-size: 28px;
+        padding: 20px;
+        line-height: 50px;
+        margin-left: -380px;
+        margin-top: 50px;
+    }
+    .sixth > .slide >.order > .o-wrap > p > .tab{
+        display: flex;
+    }
+    .sixth > .slide > .order > .o-wrap > a > button{
+        width: 250px;
+        height: 80px;
+        font-size: 25px;
+        padding: 10px;
+        margin-left: -340px;
+        margin-top: 370px;
+    }
+    .sixth > .slide > .order > img{
+        width: 370px;
+        height: 470px;
+        top: 660px;
+        left: 230px;
+        
+    }
+    .sixth > .slide > .order > img:last-child{
+        width: 480px;
+        height: 400px;
+        top: 800px;
+        left: -100px;
+    }
+    /***************************/
+    .sixth > .slide > .blog{
+        width: 100%;
+        height: 1164px;
+    }
+    .sixth > .slide > .blog > h3{
+        font-size: 48px;
+        margin-left: -770px;
+        margin-top: 70px;
+    }
+    .sixth > .slide > .blog > h3 > span{
+        display: flex;
+        margin-left: 4px;
+    }
+    .sixth > .slide > .blog > .b-wrap > .b-info{
+        margin-left: -745px;
+        margin-top: -20px;
+    }
+    .sixth > .slide > .blog > .b-wrap > .b-info > p{
+        font-size: 22px;
+    }
+    .sixth > .slide > .blog > .b-wrap > .b-info > p > span{
+        font-size: 25px;
+    }
+    .sixth > .slide >.blog > .b-wrap > p{
+        font-size: 28px;
+        padding: 20px;
+        line-height: 50px;
+        margin-left: -742px;
+        margin-top: 50px;
+    }
+    .sixth > .slide >.blog > .b-wrap > p > .tab{
+        display: flex;
+    }
+    .sixth > .slide > .blog > .b-wrap > .btn{
+        margin-top: 260px;
+    }
+    .sixth > .slide > .blog > .b-wrap > .btn > a > button{
+        width: 250px;
+        height: 80px;
+        font-size: 20px;
+        padding: 10px;
+        margin-left: -820px;
+        margin-top: 30px;
+        display: block;
+    }
+    .sixth > .slide > .blog > img{
+        width: 480px;
+        height: 400px;
+        top: 700px;
+        left: -240px;
+    }
+    .sixth > .slide > .blog > img:last-child{
+        width: 500px;
+        height: 380px;
+        top: 800px;
+        left: -550px;
+    }
+    /*******************************/
+    .sixth > .wbtn{
+        gap: 915px;
+        left: -2px;
+        top: 7650px;
+    }
+    /********************************/
+    .seventh{
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .seventh > h2{
+        font-size: 100px;
+        margin-left: 160px;
+        margin-top: 130px;
+    }
+    .seventh > .container{
+        width: 900px;
+        margin-left: 35px;
+        margin-top: 60px;
+    }
+    .seventh > .container > .slide{
+        width: 100px;
+        padding: 10px;
+    }
+    .seventh > .container > .slide > h3{
+        font-size: 30px;
+        top: 30px;
+    }
+    .seventh > .container > .slide > a > button{
+        height: 60px;
+        top: 870px;
+        left: -7px;
+    }
+    /*************************/
+    .eighth{
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .eighth > h2{
+        font-size: 100px;
+        margin-left: 140px;
+        margin-top: 130px;
+    }
+    .eighth > .container{
+        width: 900px;
+        margin-left: 35px;
+        margin-top: 160px;
+    }
+    .eighth > .container > .slide{
+        width: 100px;
+        padding: 10px;
+    }
+    .eighth > .container > .slide > h3{
+        font-size: 30px;
+        top: 30px;
+    }
+    .eighth > .container > .slide > a > button{
+        height: 60px;
+        top: 870px;
+        left: -7px;
+    }
+    /***************************/
+    .ninth{
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .ninth > h2{
+        font-size: 100px;
+        margin-left: 140px;
+        margin-top: 130px;
+    }
+    .ninth > .container{
+        width: 900px;
+        margin-left: 35px;
+        margin-top: 100px;
+    }
+    .ninth > .container > .slide{
+        width: 100px;
+        padding: 10px;
+    }
+    .ninth > .container > .slide > h3{
+        font-size: 30px;
+        top: 720px;
+    }
+    .ninth > .container > .slide > a > button{
+        height: 60px;
+        top: 870px;
+        left: -7px;
+    }
+    /*******************/
+    .tenth{
+        width: 100%;
+        height: 100vh;
+    }
+    .tenth > h3{
+        font-size: 120px;
+        margin-left: 20px;
+    }
+    .tenth > p{
+        font-size: 100px;
+        margin-left: 20px;
+    }
+    .tenth > p:nth-child(3){
+        top: 1020px;
+        width: 750px;
+        left: 190px;
+        padding: 10px;
+        border-radius: 80px;
+    }
+    .tenth  > .footer{
+        top: 1340px;
+        gap: 200px;
+        left: 200px;
+    }
+    .tenth > .contact{
+        top: 880px;
+        right: 50px;
+        text-align: right;
+    }
+  }
   
